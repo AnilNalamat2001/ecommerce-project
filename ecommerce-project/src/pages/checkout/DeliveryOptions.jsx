@@ -17,7 +17,7 @@ export function DeliveryOptions({ cartItem, deliveryOptions, loadCart }) {
         }
 
         const updateDeliveryOption = async() => {
-          await axios.put(`/api/cart-items/${cartItem.productId}`,{
+          await axios.put(`/api/cart-items/${cartItem.id}`, {
             deliveryOptionId: deliveryOption.id
           });
           await loadCart();
@@ -30,7 +30,7 @@ export function DeliveryOptions({ cartItem, deliveryOptions, loadCart }) {
               checked={deliveryOption.id === cartItem.deliveryOptionId}
               onChange={()=>{}}
               className="delivery-option-input"
-              name={`"delivery-option-${cartItem.productId}"`} />
+              name={`delivery-option-${cartItem.productId}`} />
             <div>
               <div className="delivery-option-date">
                 {dayjs(deliveryOption.
