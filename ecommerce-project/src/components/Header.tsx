@@ -2,6 +2,7 @@ import { Link } from 'react-router';
 
 import './header.css';
 
+
 type HeaderProps = {
   cart:{
     productId: string;
@@ -37,6 +38,8 @@ export function Header({cart}: HeaderProps) {
       </div>
 
       <div className="right-section">
+       
+        
         <Link className="orders-link header-link" to="/orders">
 
           <span className="orders-text">Orders</span>
