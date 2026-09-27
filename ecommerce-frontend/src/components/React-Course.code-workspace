@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "React-Course",
+			"path": "../../.."
+		},
+		{
+			"name": "ecommerce-backend-ai-main",
+			"path": "../../../../../Downloads/ecommerce-backend-ai-main"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "React-Course"
+	}
+}
